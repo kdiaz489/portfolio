@@ -4,7 +4,7 @@ const Hero = () => {
       <p className='text-black text-7xl col-span-full mb-5 blue-highlight'>
         Hi, my name is Karen.
       </p>
-      <p className='text-blue-default text-lg col-span-full'>
+      <p className='text-blue-default  text-lg col-span-full'>
         I'm from the Inland Empire area of SoCal, but i ventured to
         Massachusetts to pursure a degree in Computer Science and Studio Art. I
         have a broad range of interests - coding, digital art, photography,

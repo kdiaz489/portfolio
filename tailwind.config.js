@@ -4,9 +4,9 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      fontfamily: {
+      fontFamily: {
         sans: ['Manrope', ...defaultTheme.fontFamily.sans],
-        body: ['Manrope'],
+        body: 'Manrope',
       },
       colors: {
         transparent: 'transparent',
