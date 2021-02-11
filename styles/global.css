@@ -1,0 +1,18 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* @import '../public/fonts/Manrope/manrope.css';
+
+html {
+  font-family: 'Manrope';
+} */
+
+.blue-highlight {
+  background-image: linear-gradient(transparent 60%, #708895 60%);
+  background-size: 95% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
