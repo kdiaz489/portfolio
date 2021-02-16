@@ -19,10 +19,10 @@ export default function Home() {
   //   }
   // });
   return (
-    <>
+    <main className='w-screen bg-brown-light lg:px-40 px-3.5'>
       <NavBar />
       <Hero />
       <Projects />
-    </>
+    </main>
   );
 }

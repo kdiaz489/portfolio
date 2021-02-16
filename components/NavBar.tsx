@@ -30,51 +30,53 @@ const NavBar = () => {
   };
 
   return (
-    <nav className='py-8 flex items-center bg-brown-light flex-wrap'>
-      <span className='text-xl text-black'>Karen S Diaz</span>
-      <button
-        onClick={toggleMenu}
-        className='inline-flex p-3 hover:bg-brown rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler'
-        data-target='#navigation'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          className='w-6 h-6 text-black'
-          viewBox='0 0 24 24'
-          stroke='currentColor'>
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth={2}
-            d='M4 6h16M4 12h16M4 18h16'
-          />
-        </svg>
-      </button>
-      <div
-        className='hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto'
-        id='navigation'>
-        <div className='lg:inline-flex lg:flex-row lg:ml-auto flex flex-col'>
-          <Link href='#projects' replace>
-            <a
-              onClick={smoothScroll}
-              href='#projects'
-              className='text-xl lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
-              <span>Projects</span>
-            </a>
-          </Link>
-          <Link href='/contact'>
-            <a className='text-xl lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
-              <span>Contact</span>
-            </a>
-          </Link>
-          <Link href='/cv'>
-            <a className='text-xl lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
-              <span>CV</span>
-            </a>
-          </Link>
+    <header className='z-20'>
+      <nav className='py-1 z-10 flex items-center bg-brown-light flex-wrap'>
+        {/* <span className='text-xl text-black lg:hidden'>Karen S Diaz</span> */}
+        <button
+          onClick={toggleMenu}
+          className='inline-flex p-3 hover:bg-brown rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler'
+          data-target='#navigation'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            className='w-6 h-6 text-black'
+            viewBox='0 0 24 24'
+            stroke='currentColor'>
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M4 6h16M4 12h16M4 18h16'
+            />
+          </svg>
+        </button>
+        <div
+          className='hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto'
+          id='navigation'>
+          <div className='lg:inline-flex lg:flex-row lg:ml-auto flex flex-col'>
+            <Link href='#projects' replace>
+              <a
+                // onClick={smoothScroll}
+                href='#projects'
+                className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
+                <span>Projects</span>
+              </a>
+            </Link>
+            <Link href='/contact'>
+              <a className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
+                <span>Contact</span>
+              </a>
+            </Link>
+            <Link href='/cv'>
+              <a className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
+                <span>CV</span>
+              </a>
+            </Link>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
