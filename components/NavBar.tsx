@@ -30,8 +30,8 @@ const NavBar = () => {
   };
 
   return (
-    <header className='z-20'>
-      <nav className='z-10 flex items-center bg-brown-light flex-wrap'>
+    <header className='absolute lg:right-40 right-3.5 z-20 h-16 w-100'>
+      <nav className='z-10 relative flex items-center bg-brown-light flex-wrap'>
         {/* <span className='text-xl text-black lg:hidden'>Karen S Diaz</span> */}
         <button
           onClick={toggleMenu}
@@ -55,22 +55,29 @@ const NavBar = () => {
           className='hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto'
           id='navigation'>
           <div className='lg:inline-flex lg:flex-row lg:ml-auto flex flex-col'>
+            <Link href='#about' replace>
+              <a
+                href='about'
+                className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
+                01. About
+              </a>
+            </Link>
             <Link href='#projects' replace>
               <a
                 // onClick={smoothScroll}
                 href='#projects'
                 className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
-                <span>Projects</span>
+                02. Projects
               </a>
             </Link>
             <Link href='/contact'>
               <a className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
-                <span>Contact</span>
+                03. Contact
               </a>
             </Link>
             <Link href='/cv'>
               <a className='text-md lg:inline-flex lg:w-auto lg:px-3 py-2 rounded text-black hover:text-blue'>
-                <span>CV</span>
+                04. CV
               </a>
             </Link>
           </div>
