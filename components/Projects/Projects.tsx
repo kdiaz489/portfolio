@@ -9,7 +9,7 @@ const Projects = () => {
     <section
       id='projects'
       data-aos='fade-up'
-      className='box-border h-screen flex justify-center items-center grid grid-cols-12 lg:py-80'>
+      className='box-border h-95vh flex justify-center items-center grid grid-cols-12 lg:py-80'>
       <p className='text-black text-7xl col-span-full mb-5'>Projects</p>
       <p className='text-blue-default text-lg col-span-full'>
         I have experience in both back end and front end development

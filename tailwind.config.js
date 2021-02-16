@@ -4,6 +4,7 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      height: { '95vh': '95vh' },
       fontFamily: {
         sans: ['Manrope', ...defaultTheme.fontFamily.sans],
         body: 'Manrope',
