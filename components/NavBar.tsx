@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <header className='z-20'>
-      <nav className='py-1 z-10 flex items-center bg-brown-light flex-wrap'>
+      <nav className='z-10 flex items-center bg-brown-light flex-wrap'>
         {/* <span className='text-xl text-black lg:hidden'>Karen S Diaz</span> */}
         <button
           onClick={toggleMenu}

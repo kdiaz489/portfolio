@@ -3,20 +3,19 @@ const Hero = () => {
     <section className='relative h-95vh flex justify-center items-center lg:py-0'>
       <div>
         <p className='text-black text-lg'>Hi, my name is</p>
-        <p className='text-black font-bold text-xl lg:text-7xl mb-5 '>
+        <p className='text-black font-bold text-5xl lg:text-7xl mb-5 '>
           <span className='blue-highlight'>Karen Diaz</span>
         </p>
-        <p className='text-black lg:text-3xl mb-5 font-bold max-w-4xl'>
+        <p className='text-black lg:text-4xl text-lg mb-5 font-bold max-w-4xl'>
           <span>
-            Dedicated to bringing enrichment to users by solving problems with
-            code, data and design.
+            Bringing enrichment to users by solving problems with code, data and
+            design.
           </span>
         </p>
-        <p className='text-blue text-lg max-w-3xl'>
-          I'm from the Inland Empire area of SoCal, but I ventured to
-          Massachusetts to pursure a degree in Computer Science and Studio Art.
-          I have a broad range of interests - coding, visual art, photography,
-          education - overall, I have a love for learning{' '}
+        <p className='text-blue text-base lg:text-lg max-w-3xl'>
+          I'm a Full Stack Dev based in Ontario, Ca. I have a broad range of
+          interests - coding, visual art, photography, education - overall, I
+          have a love for learning and problem solving{' '}
           <span role='img' aria-label='sparkle-heart'>
             💖
           </span>
